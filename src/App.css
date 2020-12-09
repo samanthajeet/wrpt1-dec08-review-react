@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
+.app-title {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+}

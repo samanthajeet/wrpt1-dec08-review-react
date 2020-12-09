@@ -23,6 +23,21 @@ class Dashboard extends Component {
           artist: 'Fiddler in the Roof',
           photo: 'https://images-na.ssl-images-amazon.com/images/I/51qHkagNQcL._SX466_.jpg'
         },
+        {
+          title: 'Building A Mystery',
+          artist: 'Sarah McLachlan',
+          photo: 'https://i.scdn.co/image/89d9c22e066a804d68483c4a21e6ae4ff130652d'
+        },
+        {
+          title: 'Sweet Dreams',
+          artist: 'La Bouche',
+          photo: 'https://images-na.ssl-images-amazon.com/images/I/71jRc2LXxIL._SL1500_.jpg'
+        },
+        {
+          title: 'Hurt',
+          artist: 'Johnny Cash',
+          photo: 'https://cdn.smehost.net/johnnycashonlinecom-uslegacyprod/wp-content/uploads/2018/10/Hurt.jpg'
+        },
       ]
     }
   }
@@ -34,8 +49,7 @@ class Dashboard extends Component {
       )
     })
     return (
-      <div>
-        <h1>{this.props.name}</h1>
+      <div className="dashboard">
         {songs}
       </div>
     )

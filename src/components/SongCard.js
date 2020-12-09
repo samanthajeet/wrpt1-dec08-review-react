@@ -3,12 +3,16 @@ import React from 'react';
 const SongCard = (props) => {
   const { title, artist, photo } = props.song;
   return (
-    <div className="song-card">
+    <div className="song-card shadow-4">
       <div className="song-text">
-        <h2>{title}</h2>
+        <div className="song-title">
+          <h2>{title}</h2>
+        </div>
         <p>{artist}</p>
       </div>
-      <img src={photo} alt={artist} />
+      <section className="song-image">
+        <img src={photo} alt={artist} />
+      </section>
     </div>
   )
 };
