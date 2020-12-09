@@ -1,0 +1,17 @@
+.song-card {
+  display: flex;
+  height: 200px;
+  width: 450px;
+  border: 2px solid black;
+}
+
+.song-card img {
+  object-fit: contain;
+}
+
+.song-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
