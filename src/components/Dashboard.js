@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import SongCard from './SongCard';
+import AddSong from './AddSong';
 import './Dashboard.css'
 
 
@@ -40,6 +41,13 @@ class Dashboard extends Component {
         },
       ]
     }
+    this.addSong = this.addSong.bind(this)
+  }
+
+  addSong(song){
+    this.setState({
+      songList: [...this.state.songList, song]
+    })
   }
 
   render(){
@@ -49,8 +57,11 @@ class Dashboard extends Component {
       )
     })
     return (
-      <div className="dashboard">
-        {songs}
+      <div>
+        <AddSong addSongFn={this.addSong} />
+        <div className="dashboard">
+          {songs}
+        </div>
       </div>
     )
   }
