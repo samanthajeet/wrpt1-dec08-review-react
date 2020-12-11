@@ -39,6 +39,10 @@ class AddSong extends Component {
     this.props.addSongFn(body)
   }
 
+  otherFunction(){
+    //does nothing. Just an example
+  }
+
   render(){
     return(
       <div>
@@ -47,8 +51,8 @@ class AddSong extends Component {
         <input placeholder="song artist" onChange={(e) => this.handleChangeArtist(e)} />
         <input placeholder="album image" onChange={(e) => this.handleAlbumImage(e)} />
         {/* <button onClick={() => this.handleAddSong()}>add song</button> */}
-        <Button callbackFunction={this.handleAddSong} label="delete app" important={true} />
         <Button callbackFunction={this.handleAddSong} label="add song"  />
+        <Button callbackFunction={this.otherFunction} label="delete app" important={true} />
       </div>
     )
   }
